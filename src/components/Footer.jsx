@@ -42,7 +42,8 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {currentYear} Sambal Tempong Burial. All rights reserved.</p>
+                    <p>&copy; 2026 Sambal Tempong Burial. All rights reserved.</p>
+                    <p style={{ marginTop: '5px', fontSize: '0.8rem' }}>Developed by <a href="https://adi-muhamad.my.id" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>adi-muhamad.my.id</a></p>
                 </div>
             </div>
         </footer>
