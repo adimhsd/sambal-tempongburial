@@ -1,0 +1,8 @@
+/* Global app styles or utilities can go here if distinct from index.css */
+/* Intentionally left empty to override default Vite center alignment on #root */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}

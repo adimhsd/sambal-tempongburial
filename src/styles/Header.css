@@ -1,0 +1,118 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: var(--white);
+    /* Start assuming hero is dark or requires white text */
+}
+
+/* Make header readable on hero bg initially if hero is light? 
+ * Actually, PRD says "Sticky nav". Usually transparent at top over hero, then solid when scrolled.
+ * I will make hero text white? Let's assume Hero is immersive.
+ * Wait, `var(--text-main)` is dark brown. If hero is food spread, text needs contrast.
+ * I'll use white text for Header initially, but check Hero.
+ */
+
+.header.scrolled {
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    color: var(--text-main);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: inherit;
+}
+
+.logo-accent {
+    color: var(--primary);
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.mobile-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+        z-index: 1001;
+        /* Above the menu overlay */
+        color: inherit;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        /* Slide-in drawer or full screen? Drawer is nicer */
+        height: 100vh;
+        background-color: var(--white);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        color: var(--text-main);
+        /* Always dark on white menu bg */
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .header:not(.scrolled) .nav-menu {
+        /* Ensure mobile menu text is dark even if header is transparent white */
+        color: var(--text-main);
+    }
+}
