@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sambal-tempongburial.web.app/sitemap.xml
