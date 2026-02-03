@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/About.css';
 import interiorImg from '../assets/about-interior.png';
-import chefImg from '../assets/about-chef.png';
+import parkingImg from '../assets/parking-area.png';
 
 const About = () => {
     return (
@@ -34,17 +34,17 @@ const About = () => {
                     {/* Row 2: Image Left, Text Right */}
                     <div className="about-row reverse">
                         <div className="about-image">
-                            <img src={chefImg} alt="Chef Memasak" loading="lazy" />
+                            <img src={parkingImg} alt="Area Parkir Luas" loading="lazy" />
                         </div>
                         <div className="about-content">
-                            <h3>Dimasak dengan Sepenuh Hati</h3>
+                            <h3>Parkiran yang Luas</h3>
                             <p>
-                                Resep kami adalah warisan turun-temurun yang dijaga keasliannya. Menggunakan rempah-rempah pilihan
-                                terbaik dari seluruh penjuru Nusantara, dan bahan-bahan segar yang kami pilih sendiri setiap pagi.
+                                Kami mengerti betapa pentingnya kenyamanan Anda, bahkan sebelum Anda memasuki restoran.
+                                Oleh karena itu, kami menyediakan area parkir yang sangat luas dan tertata rapi.
                             </p>
                             <p>
-                                Para juru masak kami tidak hanya memasak, tetapi menuangkan cinta dan dedikasi dalam setiap hidangan
-                                yang tersaji di meja Anda.
+                                Baik Anda datang dengan sepeda motor, mobil pribadi, maupun rombongan dengan bus pariwisata,
+                                kendaraan Anda akan aman dan mudah diparkir, sehingga Anda bisa menikmati hidangan dengan tenang.
                             </p>
                         </div>
                     </div>

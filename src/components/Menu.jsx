@@ -1,10 +1,16 @@
 import React from 'react';
-import { menuItems } from '../data/content';
+import { menuItems, contactInfo } from '../data/content';
 import '../styles/Menu.css';
 
 const Menu = () => {
     const getImageUrl = (name) => {
         return new URL(`../assets/${name}`, import.meta.url).href;
+    };
+
+    const handleOrder = (menuName) => {
+        const message = `Saya ingin memesan ${menuName}`;
+        const url = `https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
     };
 
     return (
@@ -35,7 +41,7 @@ const Menu = () => {
                                     <span className="menu-price">Rp {item.price.toLocaleString('id-ID')}</span>
                                 </div>
                                 <p className="menu-desc">{item.description}</p>
-                                <button className="btn-add">Pesan</button>
+                                <button className="btn-add" onClick={() => handleOrder(item.name)}>Pesan</button>
                             </div>
                         </div>
                     ))}

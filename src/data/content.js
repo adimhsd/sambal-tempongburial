@@ -15,73 +15,73 @@ export const heroContent = {
 export const menuItems = [
   {
     id: 1,
-    name: "Ayam Bakar Madu",
-    price: 35000,
-    description: "Ayam kampung pilihan dengan bumbu madu rahasia, disajikan dengan Sambal Tempong khas.",
+    name: "Bebek Betutu Khas Bali",
+    price: 40000,
+    description: "Bebek utuh berbumbu khas Bali, dimasak perlahan hingga empuk dan kaya rempah.",
     isBestSeller: true,
     category: "Main Course",
-    image: "ayam-bakar.png"
+    image: "Bebek-Betutu-Khas-Bali.png"
   },
   {
     id: 2,
-    name: "Nasi Goreng Kampung",
-    price: 28000,
-    description: "Nasi goreng tradisional dengan topping ayam suwir, telur dadar, dan kerupuk.",
-    isBestSeller: true,
+    name: "Mujaer Bakar",
+    price: 16000,
+    description: "Ikan mujaer bakar gurih, aroma asap menggoda, disajikan dengan sambal segar.",
+    isBestSeller: false,
     category: "Main Course",
-    image: "nasi-goreng.png"
+    image: "Mujaer-Bakar.png"
   },
   {
     id: 3,
-    name: "Sate Ayam Madura",
-    price: 30000,
-    description: "Sate ayam juicy dengan bumbu kacang kental khas Madura.",
-    isBestSeller: false,
+    name: "Gurame Goreng",
+    price: 85000,
+    description: "Gurame goreng renyah di luar, lembut di dalam, nikmat disantap hangat.",
+    isBestSeller: true,
     category: "Main Course",
-    image: "sate-ayam.png"
+    image: "Gurame-Goreng.png"
   },
   {
     id: 4,
-    name: "Es Teler Spesial",
-    price: 18000,
-    description: "Segarnya campuran alpukat, kelapa muda, nangka, dan susu kental manis.",
-    isBestSeller: true,
-    category: "Beverage",
-    image: "es-teler.png"
+    name: "Sop Ayam Kampung",
+    price: 35000,
+    description: "Sop ayam kampung bening, gurih alami, hangat, menyehatkan, dan mengenyangkan.",
+    isBestSeller: false,
+    category: "Main Course",
+    image: "Sop-Ayam-Kampung.png"
   },
   {
     id: 5,
-    name: "Gado-Gado Siram",
-    price: 22000,
-    description: "Sayuran segar dengan saus kacang medok dan kerupuk bawang.",
+    name: "Tumis Kangkung",
+    price: 10000,
+    description: "Kangkung segar ditumis bawang dan cabai, sederhana, lezat, dan menggugah selera.",
     isBestSeller: false,
-    category: "Main Course",
-    image: "gado-gado.png"
+    category: "Side Dish",
+    image: "Tumis-Kangkung.png"
   },
   {
     id: 6,
-    name: "Es Jeruk Murni",
-    price: 12000,
-    description: "Perasan jeruk murni segar tanpa pemanis buatan.",
-    isBestSeller: false,
-    category: "Beverage",
-    image: "es-jeruk.png"
+    name: "Paket Nasi Daun Jeruk Ayam Goreng",
+    price: 28000,
+    description: "Ayam goreng daun jeruk harum, disajikan dengan nasi hangat dan pelengkap.",
+    isBestSeller: true,
+    category: "Packages",
+    image: "Paket-Nasi-Daun-Jeruk-Ayam-Goreng.png"
   }
 ];
 
 export const testimonials = [
   {
     id: 1,
-    name: "Budi Santoso",
+    name: "Ceu Epik",
     role: "Food Blogger",
-    text: "Sambal tempongnya bener-bener nampol! Pedesnya seger, bikin makan nambah terus.",
+    text: "Tempatnya nyaman buat keluarga. Anak-anak suka ayam bakarnya, suami suka sambalnya.",
     avatar: "avatar-1.png"
   },
   {
     id: 2,
-    name: "Siti Rahma",
-    role: "Ibu Rumah Tangga",
-    text: "Tempatnya nyaman buat keluarga. Anak-anak suka ayam bakarnya, suami suka sambalnya.",
+    name: "Kuliner Si Mamang",
+    role: "Food Blogger",
+    text: "Sambal tempongnya bener-bener nampol! Pedesnya seger, bikin makan nambah terus.",
     avatar: "avatar-2.png"
   },
   {
