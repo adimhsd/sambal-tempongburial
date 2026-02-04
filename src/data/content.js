@@ -99,5 +99,7 @@ export const contactInfo = {
   whatsapp: "6287851587991",
   whatsappMessage: "Halo Admin Sambal Tempong Burial, saya ingin pesan makanan.",
   openingHours: "Senin - Minggu: 10.00 - 22.00 WIB",
-  instagram: "https://www.instagram.com/sambal_tempongburial/"
+  instagram: "https://www.instagram.com/sambaltempongburialnew/",
+  facebook: "https://www.facebook.com/share/r/17kWbT7fL8/",
+  tiktok: "https://www.tiktok.com/@arpraprajagmail.com"
 };

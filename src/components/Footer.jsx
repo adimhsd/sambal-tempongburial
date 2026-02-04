@@ -4,7 +4,7 @@ import { contactInfo } from '../data/content';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-    const { instagram, whatsapp, whatsappMessage } = contactInfo;
+    const { instagram, facebook, tiktok, whatsapp, whatsappMessage } = contactInfo;
     const whatsappUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
 
     return (
@@ -23,13 +23,12 @@ const Footer = () => {
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                     </a>
-                    {/* Facebook & TikTok placeholders as requested previously, but no data provided */}
-                    <a href="#" className="social-icon facebook" aria-label="Facebook">
+                    <a href={facebook} target="_blank" rel="noopener noreferrer" className="social-icon facebook" aria-label="Facebook">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                         </svg>
                     </a>
-                    <a href="#" className="social-icon tiktok" aria-label="TikTok">
+                    <a href={tiktok} target="_blank" rel="noopener noreferrer" className="social-icon tiktok" aria-label="TikTok">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
                         </svg>
